@@ -1,4 +1,5 @@
 import NextLogo from "./NextLogo";
+import Link from "next/link";
 import SupabaseLogo from "./SupabaseLogo";
 
 export default function Header() {
@@ -18,8 +19,9 @@ export default function Header() {
         </a>
       </div>
       <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
-      <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center">
-        The fastest way to build apps with{" "}
+      <Link href={"/characters"}>Chars</Link>
+      <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center text-blue-400">
+        Learning to build apps{" "}
         <a
           href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
           target="_blank"
